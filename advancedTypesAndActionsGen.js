@@ -17,8 +17,12 @@ function genActions(typeString, typeFileName, absolutePath) {
 function genTypes(typeString) {
     return [typeString, `${typeString}_STARTED`, `${typeString}_SUCCESS`, `${typeString}_FAILURE`].map(str => `export const ${str} = '${str}';`).join('\n');
 }
-
-function replacer({ selectedText, store, log, absolutePath }) {
+/**
+ * 
+ * @param {String} selectedText 
+ * @param {Object} options 
+ */
+function replacer( selectedText, { store, log, absolutePath }) {
     log(absolutePath);
 
     const [fname, ...args] = selectedText.split(",").map(s => s.trim());

@@ -1,4 +1,4 @@
-// TODO: add detailed examplanations and how to use it
+// TODO: add detailed explanations and how to use it
 function capitalize(word) {
     return word[0].toUpperCase() + word.slice(1).toLowerCase();
 }

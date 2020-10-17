@@ -4,11 +4,12 @@
  * @param {String} selectedText 
  * @param {Object} options 
  */
-function basicAsyncExample( selectedText, { log }) {
-    // example usage of log function. calling this function will show an information box in vscode
-    // This actually calls vscode.window.showInformationMessage
-    // NOTE: This function only takes one argument, a string
-    log("started timer");
+function basicAsyncExample( selectedText, { absolutePath }) {
+    console.log("started timer");
+    // This actually calls vscode.window.showInformationMessage (console.log and console.error are overwritten, so that calls to them 
+    // in your script will actually show up in vscode itself as informationMessage or errorMessage. warn and info are NOT supported yet.
+    // NOTE: This function is not as powerful as native console.log as arguments passed need to be stringified for display
+
     // resolve a string value, replaced: selection, where selection is the text selected by the user
     return new Promise(res => setTimeout(() => res("replaced: " + selectedText), 2000))
 };

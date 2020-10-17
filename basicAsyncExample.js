@@ -1,4 +1,4 @@
-// Please note: selectedText is the first argument( a string) and the second argument is an options object containing various params like log, showError, absolutePath etc. TODO: document the options passed in the second argument
+// Please note: selectedText is the first argument( a string) and the second argument is an options object containing various params like absolutePath etc. TODO: document the options passed in the second argument
 /**
  * 
  * @param {String} selectedText 

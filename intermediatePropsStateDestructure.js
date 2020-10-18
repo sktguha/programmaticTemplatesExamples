@@ -12,6 +12,8 @@
 // this will help
 function propsStateAutoFixer(selectedText, { store }) {
     selectedText = selectedText.trim();
+    // TODO: can probably output and flush the store, for both props and states destructure statements at once, if no selected text is detected. 
+    // but have to check also if store.props is non empty before outputting: const { prop1, prop2 } = this.props , similiar for state.
     if (selectedText === "ps") {
         console.log('flush state', store.states, ' from cache');
         const str = 'const {' + store.states.join(',') + '} = this.state;'

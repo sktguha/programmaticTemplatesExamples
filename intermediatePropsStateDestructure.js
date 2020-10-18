@@ -1,4 +1,4 @@
-// This semi automates props & state destructuring, esp if you have lots of this.props.someProp statements lying around in your render function or elsewhere. 
+// This semi automates props & state destructuring, esp if you have lots of this.props.someProp statements lying around in your render functions or elsewhere. 
 // Meant for use with the vscode extension: https://github.com/sktguha/programmaticTemplates
 // Won't fully automate it though. TODO: Will post better instructions on how to use
 // but should be possible to figure it out by looking at the code. The code is not that complicated 
